@@ -17,6 +17,9 @@ Route::get('/', function () {
    $meuPrimeiroServico = new Servico;
    $meuPrimeiroServico->nome = "Programador";
    $meuPrimeiroServico->telefone = "11782562245";
+   $meuPrimeiroServico->origem = "Celular";
+   $meuPrimeiroServico->data = "17/03/2023";
+   $meuPrimeiroServico->observacao = "Quebrou meu notebook";
    $meuPrimeiroServico->save();
-   return view('welcome');
+   return view('index');
 });
